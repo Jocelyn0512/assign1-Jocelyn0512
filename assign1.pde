@@ -59,7 +59,7 @@ void draw()
   
     
   imageMode(CORNER);
-  image(hog, 280, 80);
+  image(hog, 320, 80);
   image(soil, 0, height*1/3);
   image(life, lifeX, lifeY);
   image(life, lifeX + lifeTotalGap, lifeY);
