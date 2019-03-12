@@ -57,7 +57,7 @@ void draw()
   rectMode(CORNERS);
   rect(0, height/3 - grassHeight, width, height/3);
   
-  image(hog, 320, hogHeight+(hogHeight/2);
+  image(hog, 320, hogHeight+(hogHeight/2));
   
   
   imageMode(CORNER);
