@@ -57,11 +57,11 @@ void draw()
   rectMode(CORNERS);
   rect(0, height/3 - grassHeight, width, height/3);
   
-  
+  image(hog, 320, (height/3)-(hogHeight/2);
   
   
   imageMode(CORNER);
-  image(hog, 640/2- hogHeight/2, height/3 - hogHeight/2);
+  
   image(soil, 0, height*1/3);
   image(life, lifeX, lifeY);
   image(life, lifeX + lifeTotalGap, lifeY);
