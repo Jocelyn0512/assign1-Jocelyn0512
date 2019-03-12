@@ -40,14 +40,14 @@ void setup()
   soil = loadImage("img/soil.png");
   robot = loadImage("img/robot.png");  
   soldier = loadImage("img/soldier.png");
-  
+  imageMode(CENTER);
   
 }
 
 void draw() 
 {
   //background image
-  imageMode(CENTER);
+  
   background (bg);
   
   //grass
