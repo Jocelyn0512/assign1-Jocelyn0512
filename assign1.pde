@@ -48,7 +48,7 @@ void draw()
 {
   //background image
   
-  background (bg, 320-80, 240-40);
+  background (bg, 320, 240);
   
   //grass
   noStroke();
@@ -57,7 +57,7 @@ void draw()
   rectMode(CORNERS);
   rect(0, height/3 - grassHeight, width, height/3);
   
-  image(hog, 320, 120);
+  image(hog, 320-80, 120-40);
   
   
   imageMode(CORNER);
