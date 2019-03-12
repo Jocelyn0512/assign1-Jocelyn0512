@@ -48,7 +48,7 @@ void draw()
 {
   //background image
   imageMode(CENTER);
-  background (bg);
+  background (bg, width, height);
   
   //grass
   noStroke();
