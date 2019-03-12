@@ -48,7 +48,7 @@ void draw()
 {
   //background image
   
-  background (bg);
+  background (bg, 320, 240);
   
   //grass
   noStroke();
