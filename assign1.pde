@@ -16,17 +16,17 @@ float lifeY = 10;
 
 float soldierHeight = 80;
 float soldierX = 0;
-float soldierY = floor(random(2,5))*soilHeight;
+float soldierY = floor(random(2,6))*soilHeight;
 
 float robotX = floor(random(soilWidth*2,soilWidth*7));
-float robotY = floor(random(2,5))*soilHeight;
+float robotY = floor(random(2,6))*soilHeight;
 
 float laserX = robotX + 25;
 float laserY = robotY + 37;
-float laserLength = 10;
-float laserHeight = 10;
+float laserLength = 5;
+float laserHeight = 5;
 float laserXSpeed = 2;
-float laserTravel = 160-35;
+float laserTravel = 160-25;
 
 PImage bg, hog, life, robot, soil, soldier;
 
@@ -47,8 +47,7 @@ void setup()
 void draw() 
 {
   //background image
-  
-  background (bg, 320, 240);
+    image (bg, 320, 240);
   
   //grass
   noStroke();
@@ -91,16 +90,17 @@ void draw()
   
   
   //laser animation
-     if(laserLength < 40)
+     if(laserLength < 30)
   {
     laserLength++;
   }
   
   laserX -= laserXSpeed;
+ 
   if(laserX < robotX - laserTravel)
   {
      laserX = robotX+25;
-     laserLength = 10;
+     laserLength = 5;
   }
       
 }
